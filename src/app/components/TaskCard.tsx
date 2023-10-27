@@ -48,7 +48,7 @@ const TaskCard = ({ task, handleEdit }: ITaskCardProps) => {
 
   const handleDelete = async (id: number) => {
     try {
-      const response = await fetch(`http://localhost:8000/tasks/${id}`, {
+      const response = await fetch(`${TODO_API_URI}/tasks/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: userInfo.token,
