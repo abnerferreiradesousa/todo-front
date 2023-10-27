@@ -2,7 +2,7 @@
 import { useContext, useState } from "react";
 import FormUser from "../components/FormUser";
 import { Context } from "@/contextAPI/Context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import '../globals.css'
 
 const CreateAccount = () => {
